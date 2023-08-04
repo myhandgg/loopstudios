@@ -165,7 +165,9 @@ header .bars ,
 .section-2 .container{
     display: flex;
 }
-
+.section-2 img{
+    width: 100%;
+}
 .section-2 .text{
     background-color: white;
     position: relative;
@@ -195,9 +197,7 @@ header .bars ,
         justify-content: center;
         align-items: center;
     }
-    .section-2 img{
-        width: 580px;
-    }
+
     .section-2 .text{
         top: 75px;
     }
