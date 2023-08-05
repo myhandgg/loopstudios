@@ -276,7 +276,65 @@ header .bars ,
         font-size: 1rem;
         max-width: 288px;
     }
-    br{
+    .section-2 br{
         display: none;
+    }
+}
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+.gallery .container img{
+    width: 100%;
+}
+.gallery .container .pic-cont{
+    position: relative;
+    cursor: pointer;
+}
+.gallery .container .pic-cont::before{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    opacity: 20%;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 60%, rgba(6,6,6,0) 100%);
+}
+.gallery .container .pic-cont:hover img{
+    transition: 0.3s;
+}
+.gallery .container .pic-cont:hover img{
+    opacity: 50%;
+}
+.gallery .container .pic-cont:hover p{
+    color: black;
+}
+.gallery .container .pic-cont p{
+    position: absolute;
+    bottom: 20px;
+    left: calc(12px + 20px);
+    color: white;
+    font-size: 2.25rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+}
+
+@media (max-width:575px){
+    .gallery .container .pic-cont p{
+        font-size: 2rem;
     }
 }
