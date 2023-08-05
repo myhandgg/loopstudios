@@ -18,3 +18,122 @@ body {
 }
 
 /* Start */
+.section-2 .container{
+    display: flex;
+}
+
+.section-2 .text{
+    background-color: white;
+    position: relative;
+    top: 240px;
+    right: 200px;
+    padding: 60px 0 0 60px;
+    height: fit-content;
+    min-width:445.81px;
+}
+.section-2 .text h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-2 .text p{
+    color: var(--Dark-Gray);
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+
+}
+
+@media (max-width:1199px) {
+    .section-2 .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-2 img{
+        width: 580px;
+    }
+    .section-2 .text{
+        top: 75px;
+    }
+}
+@media (max-width:991px) {
+    .section-2 .container{
+        display: flex;
+        flex-direction: column;  
+    }
+    .section-2 .image{
+        text-align: center;        
+    }
+    .section-2 img{
+        width: 100%;
+    }
+    .section-2 .text{
+        position: static;
+        text-align: center;
+        width: 100%;
+        padding: 50px 0 0 0;
+        margin: auto;
+    }
+    .section-2 .text h2{
+        font-size: 3rem;
+    }
+    .section-2 .text p{
+        font-size: 1rem;
+        width: 506px;
+        margin: auto;
+    }
+    .text p br{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .section-2 .text h2{
+        font-size: 3rem;
+    }
+    .section-2 .text p{
+        font-size: 1rem;
+        width: 346px;
+        margin: auto;
+    }
+    .text p br{
+        display: none;
+    }
+}
+
+@media (max-width:575px) {
+    .container{
+        width: 342px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-2 .text {
+        position: static;
+        padding: 0;
+        text-align: center;
+        min-width: fit-content;
+    }
+    .section-2 .image img {
+        margin-bottom: 50px;
+    }
+    .section-2 img {
+        width: 100%;
+        text-align: center;
+    }
+    .section-2 .text h2{
+        font-size: 2rem;
+        margin: auto 0 20px;
+    }
+    .section-2 .text p{
+        font-size: 1rem;
+        width: 288px;
+    }
+    br{
+        display: none;
+    }
+}
