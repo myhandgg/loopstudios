@@ -225,7 +225,7 @@ header .bars ,
     }
     .section-2 .text p{
         font-size: 1rem;
-        width: 506px;
+        max-width: 506px;
         margin: auto;
     }
     .text p br{
@@ -239,7 +239,7 @@ header .bars ,
     }
     .section-2 .text p{
         font-size: 1rem;
-        width: 346px;
+        max-width: 346px;
         margin: auto;
     }
     .text p br{
@@ -248,8 +248,7 @@ header .bars ,
 }
 
 @media (max-width:575px) {
-    .container{
-        width: 342px;
+    .container-section2{
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -275,7 +274,7 @@ header .bars ,
     }
     .section-2 .text p{
         font-size: 1rem;
-        width: 288px;
+        max-width: 288px;
     }
     br{
         display: none;
