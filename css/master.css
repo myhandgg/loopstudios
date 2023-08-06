@@ -338,12 +338,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 60%, rgba(6,6,6,0) 100%);
     }
 }
 
-@media (max-width:425px) {
-    .gallery .container .pic-cont p {
-        bottom: 0;
-    }
-}
-
 /* ============================== */
 /* ============================== */
 /* ============================== */
