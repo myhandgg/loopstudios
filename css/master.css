@@ -32,14 +32,17 @@ header ul {
     display: flex;
 }
 
-header ul li {
+header ul li ,
+footer .about-us ul li {
     color: var(--White);
     font-weight: bold;
     cursor: pointer;
     position: relative;
+    padding-bottom: 5px;
 }
 
-header ul li:after {
+header ul li:after ,
+footer .about-us ul li:after {
     content: '';
     position: absolute;
     width: 20px;
@@ -53,7 +56,8 @@ header ul li:after {
     transition: .3s;
 }
 
-header ul li:hover:after {
+header ul li:hover:after ,
+footer .about-us ul li:hover:after {
     opacity: 1;
 }
 
@@ -144,10 +148,6 @@ header .bars ,
     align-items: center;
 }
 
-/* ============================== */
-/* ============================== */
-/* ============================== */
-/* ============================== */
 /* ============================== */
 /* ============================== */
 /* ============================== */
@@ -291,10 +291,9 @@ header .bars ,
 /* ============================== */
 /* ============================== */
 /* ============================== */
-/* ============================== */
-/* ============================== */
-/* ============================== */
-/* ============================== */
+.gallery {
+    padding: 100px 0;
+}
 .gallery .container img{
     width: 100%;
 }
@@ -336,5 +335,100 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 60%, rgba(6,6,6,0) 100%);
 @media (max-width:575px){
     .gallery .container .pic-cont p{
         font-size: 2rem;
+    }
+}
+
+@media (max-width:425px) {
+    .gallery .container .pic-cont p {
+        bottom: 0;
+    }
+}
+
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+
+/* Footer */
+
+footer {
+    background-color: var(--Black);
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons-copyright {
+    display: flex;
+    flex-direction: column;
+} 
+
+footer .logo-about-us .about-us ,
+footer .icons-copyright .copyright {
+    padding-top: 20px;
+}
+
+footer .logo-about-us .about-us ul {
+    display: flex;
+}
+
+footer .icons-copyright .icons {
+    align-self: flex-end;
+}
+
+footer .icons-copyright .icons i {
+    font-size: 25px;
+    color: var(--White);
+    margin: 0 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+footer .icons-copyright .icons i::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--White);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .3s;
+}
+
+footer .icons-copyright .icons i:hover:after {
+    opacity: 1;
+}
+
+footer .icons-copyright .copyright p {
+    margin: 0;
+    color: var(--Dark-Gray);
+    font-weight: bold;
+}
+
+@media (max-width:767px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo-about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo-about-us .about-us ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .icons-copyright {
+        padding-top: 50px;
+    }
+    footer .icons-copyright .icons {
+        align-self: center;
     }
 }
