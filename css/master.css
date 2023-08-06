@@ -294,6 +294,33 @@ header .bars ,
 .gallery {
     padding: 100px 0;
 }
+.gallery .container .top-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.gallery .container .top-section h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.gallery .container .gallery-button{
+    border: 1px solid black;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    height: fit-content;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 0.3s;
+    letter-spacing: 5px;
+}
+.gallery .container .gallery-button:hover{
+    background-color: black;
+    color: white;
+}
 .gallery .container img{
     width: 100%;
 }
@@ -331,13 +358,54 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 60%, rgba(6,6,6,0) 100%);
     transition: 0.3s;
 
 }
+.gallery .container .btn-2{
+    display:none;
+    margin: auto;
+    margin-top: 30px;
+}
 
+@media (max-width:767px){
+    .gallery .container .top-section h2{
+        margin: auto;
+    }
+    .gallery .container .top-section .gallery-button{
+        display: none;
+    }
+    .gallery .container .btn-2{
+        display: block;
+    }
+}
 @media (max-width:575px){
     .gallery .container .pic-cont p{
         font-size: 2rem;
     }
+    
+}
+@media (max-width:425px){
+    .gallery .container .pic-cont p{
+        font-size: 1.3rem;
+    }
+    .gallery .container .top-section h2{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width:309px){
+    .gallery .container .pic-cont p{
+        font-size: 0.7rem;
+    }
+    .gallery .container .top-section h2{
+        font-size: 2rem;
+    }
 }
 
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
+/* ============================== */
 /* ============================== */
 /* ============================== */
 /* ============================== */
@@ -426,3 +494,4 @@ footer .icons-copyright .copyright p {
         align-self: center;
     }
 }
+
